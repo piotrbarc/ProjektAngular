@@ -1,0 +1,26 @@
+.Menu
+{
+  width: 100%;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background: #b1847b;
+  z-index: 1;
+}
+#MenuElement
+{
+  font-weight: 700;
+  font-size: 40px;
+  padding-left: 30px;
+  text-decoration: none;
+  color:black;
+
+}
+#MenuElementLogin
+{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color:black;
+}

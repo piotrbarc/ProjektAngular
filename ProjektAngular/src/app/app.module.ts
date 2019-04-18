@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,15 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forChild([
+
+        {path: 'login', component: LoginComponent },
+      { path : '', redirectTo : 'login' , pathMatch : 'full' },
+      {path: 'start', component: StartPageComponent },
+      { path : '', redirectTo : 'start' , pathMatch : 'full' }
+
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
