@@ -7,13 +7,15 @@ import { LoginComponent } from './login/login.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { RouterModule } from '@angular/router';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     StartPageComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,10 @@ import { RouterModule } from '@angular/router';
         {path: 'login', component: LoginComponent },
       { path : '', redirectTo : 'login' , pathMatch : 'full' },
       {path: 'start', component: StartPageComponent },
-      { path : '', redirectTo : 'start' , pathMatch : 'full' }
+      { path : '', redirectTo : 'start' , pathMatch : 'full' },
+      {path: 'register', component: RegisterComponent},
+      {path : '', redirectTo : 'register', pathMatch : 'full'}
+
 
     ])
   ],
